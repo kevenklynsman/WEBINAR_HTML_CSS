@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#aboutContainer {
+  flex: 1.2;
+  padding: 3.8rem;
+}
+
+#brand {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+#brand img {
+  height: 50px;
+  margin-right: 0.6rem;
+}
+
+#exclusive {
+  text-transform: uppercase;
+  color: #0075ff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+#aboutContainer h2 {
+  font-size: 2.4rem;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+#date {
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+#description {
+  max-width: 500px;
+  margin-bottom: 1rem;
+  line-height: 1.4rem;
+}
+
+#aboutContainer h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#usersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.userCard {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 180px;
+  text-align: center;
+}
+
+.userCard img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.userCard .userName {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+.userCard .userRole {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+#formContainer {
+  flex: 1;
+  background-image: url("../imagens/pattern.png");
+  background-size: cover;
+  color: #fff;
+}
+
+#formInner {
+  margin: 3rem;
+  padding: 3rem;
+  border: 2px solid #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formInner h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#formInner p {
+  margin-bottom: 1rem;
+}
+
+#registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#nameConteiner {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#registerForm input {
+  padding: 0.8rem 0.6rem;
+  border: none;
+  border-radius: 3px;
+}
+
+email {
+  min-width: 100%;
+}
+
+#registerForm input[type="submit"] {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#registerForm input[type="submit"]:hover {
+  background-color: #fff;
+  color: #0075ff;
+}
+
+#benefits {
+  text-align: left;
+  align-self: flex-start;
+}
+
+#benefits h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#benefits ul {
+  list-style-position: inside;
+}
+
+#benefits li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 450px) {
+  body {
+    flex-direction: column;
+  }
+  #aboutConteiner {
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+  #aboutConteiner h2 {
+    font-size: 3rem;
+  }
+  #exclusive,
+  #date {
+    font-size: 1.4rem;
+  }
+
+  #description {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  #usersConteiner {
+    flex-direction: column;
+  }
+
+  .userCard {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .userCard img {
+    width: 180px;
+  }
+
+  .userCard .userName {
+    font-size: 1.6rem;
+  }
+
+  .userCard .userRole {
+    font-size: 1.4rem;
+  }
+
+  #formInner {
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  #register-form,
+  #nameConteiner {
+    gap: 1rem;
+  }
+}
