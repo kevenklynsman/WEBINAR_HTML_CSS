@@ -169,7 +169,7 @@ email {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 450px) {
+@media (min-width: 450px) {
   body {
     flex-direction: column;
   }
