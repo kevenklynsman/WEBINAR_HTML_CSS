@@ -8,6 +8,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -61,8 +62,10 @@ body {
 
 #usersContainer {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  margin: 1.5rem 0;
 }
 
 .userCard {
@@ -71,6 +74,7 @@ body {
   padding: 1rem;
   width: 180px;
   text-align: center;
+  width: 100%;
 }
 
 .userCard img {
@@ -169,20 +173,14 @@ email {
   margin-bottom: 0.5rem;
 }
 
-@media (min-width: 450px) {
+@media screen and (max-width: 767px) {
   body {
-    flex-direction: column;
+    flex-direction: row;
   }
-  #aboutConteiner {
-    padding: 2rem;
-    padding-bottom: 0;
-  }
-  #aboutConteiner h2 {
-    font-size: 3rem;
-  }
+
   #exclusive,
   #date {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   #description {
@@ -190,13 +188,8 @@ email {
     line-height: 2.2rem;
   }
 
-  #usersConteiner {
-    flex-direction: column;
-  }
-
   .userCard {
     width: 100%;
-    padding: 2rem;
   }
 
   .userCard img {
@@ -204,7 +197,7 @@ email {
   }
 
   .userCard .userName {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .userCard .userRole {
@@ -218,6 +211,8 @@ email {
 
   #register-form,
   #nameConteiner {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
   }
 }
